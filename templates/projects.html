@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='row project-showcase'>
+	{% for project in projects %}
+		{% if not project.is_blog: %}
+		<a href="projects/{{project.id}}">
+		<div class="feature-box col-lg-6">
+      	 <div class="card bg-dark text-white">
+			<img src="{{project.img_url}}" class="card-img" alt="...">
+			<div class="card-img-overlay">
+			    <h5 class="card-title">{{project.title}}</h5>
+			    <p class="card-text">{{project.subtitle}}.</p>
+			    {% if current_user.id == 1: %}
+	              <a href="/delete/{{project.id}}">✘</a>
+	            {% endif %}
+			</div>
+      	</div>
+		</div>
+	    </a>
+	    {% endif %}
+	{% endfor %}
+</div>
+{% endblock %}

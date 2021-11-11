@@ -1,0 +1,66 @@
+{% extends 'base.html'%}
+
+{% block content %}
+	<div class="title-div" style="background-image: url('{{url_for('static',filename='images/banner2.jpg')}}');">
+		<img class="title-img" src="{{url_for('static',filename='images/me.jpg')}}" alt="He is Nawf Abdullah">
+		<div class="heading">
+		<h1 class="title-text">Hey, What's up <br>I'm Nawf Abdullah</h1>
+		<h2><span>A</span>
+			<div class="slidingVertical">
+		      <span>Python</span>
+		      <span>Web</span>
+		      <span>Html</span>
+		      <span>Bootstrap</span>
+		      <span>Happy</span>
+		    </div> 
+		    <span><span class="no-need">___________</span>developer</span>
+		</h2>
+		</div>
+		<a href="/blogs">
+		<button type="button" class="btn btn-lg btn-warning"><i class="fab fa-blogger"></i>My Blogs</button></a>
+	</div>
+	</section>
+	<section id="Showcase">
+		<h2>Projects</h2>
+		<div class='row'>
+		{% for project in projects %}
+		<a href="projects/{{project.id}}">
+		<div class="feature-box col-lg-6">
+      	 <div class="card bg-dark text-white">
+			<img src="{{project.img_url}}" class="card-img" alt="...">
+			<div class="card-img-overlay">
+			    <h5 class="card-title">{{project.title}}</h5>
+			    <p class="card-text"></p>
+			</div>
+      	</div>
+		</div>
+	    </a>
+		{% endfor %}
+
+	    </div>
+	    <a href="/projects"><i class="fas fa-7x fa-arrow-circle-right nav-to-project"></i></a>
+
+	</section>
+	<hr>
+	<section id="Brief-me">
+		<h2 class='channel-title'>Code with Nawf <a style="color: red; background-color: #fff; margin: 0;" href=""><i class="fab fa-youtube"></i></a></h2>
+		<video class="intro-video" autoplay muted loop="10">
+		  <source src="{{url_for('static',filename='videos/1.mp4')}}" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+		<div class="channel-container">
+		<p class="channel-Description">"<strong>Code with Nawf</strong>" is started as a simple youtube channel. Now it has taken its birth also in Instagram. "<strong>Code with Nawf</strong>" was founded by Nawf Abdullah in his teens. It is still a startup company now planned to give amazing videos and posts. All good things take time, "In Sha Allah" Code with Nawf will take its peak soon and revolutionize a new era. I can't wait for that day! A.I. will take its peak in the coming ten-twenty years. In the upcoming years, we provide good tutorials and attractive posts to engage our audience. Be patient! We are trying our level best to bring  "Code with Nawf " to the peak. Until then, do support us. With love Nawf Abdullah. 
+		
+		</div>
+	</section>
+
+	<section id="About-me">
+		<h2 class="">Who is Nawf Abdullah?</h2>
+		<img class="coder-img" src="{{url_for('static',filename='images/coder.png')}}" alt="I am Nawf">
+		<p class="channel-Description" >Hey, I am Nawf  Abdullah, a python programmer and founder of Code with Nawf. I used to write a lot of code at my home. I am passionate about coding because I love what I do. This passion led me to challenge myself daily and learn new skills that helped me to show my best. I am a self-taught Python programmer. I love coding because it makes me think out of the box and use my brain. Now I've started learning about HTML and CSS and started moving to my next goal.</p>
+		
+	</section>
+
+{% endblock %}
+
+	

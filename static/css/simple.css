@@ -1,0 +1,69 @@
+.pesu{
+	position: relative;
+	top: 270px;
+	left: 390px;
+	color: red;
+	transform: rotate(-2deg);
+}
+
+.social-icon{
+	padding: 10px;
+	color: #000;
+}
+
+.contact{
+	position: relative;
+	top: 390px;
+	left: 450px;
+	transform: rotate(-2deg);
+	visibility: hidden;
+}
+/*************************************************/
+
+footer{
+	width: 100%;
+	min-height: 600px;
+	background-image:  url('{{url_for('static',filename='images/footer2.jpg')}}')
+}
+
+.visiting-card{
+	color: #000;
+	position: relative;
+	top:280px;
+	left: 400px;
+	transform: rotate(-2deg);
+}
+
+.credits{
+	display: inline;
+	text-align: left;
+	line-height: 2; 
+	font-size: 1rem;
+}
+
+.copy-right{
+	position: relative;
+	top: 200px;
+	left:320px;
+	font-size: 1.3rem;
+	transform: rotate(-2deg);
+
+}
+
+.project-showcase{
+	margin: 20px 140px 20px;
+}
+
+.credential{
+	color: #fff;
+	position: relative;
+	font-size:0.6rem;
+	top: 250px;
+	left: 80%;
+}
+
+.success{
+	width: 80%;
+	height: 600px;
+	background-color: red;
+}
