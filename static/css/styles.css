@@ -264,6 +264,9 @@ footer{
 }
 
 @media (max-width: 900px){
+	body{
+		width: 900px;
+	}
 	.title-div{
 	padding: 24% 17%;
 		}
