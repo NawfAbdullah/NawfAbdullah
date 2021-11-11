@@ -264,14 +264,12 @@ footer{
 }
 
 @media (max-width: 600px){
-	body{
-		width: auto;
-    	float: left;
-    	display: block;  
+	html,body{ 
    		margin: 0;
     	padding: 0;
+    	overflow-x:hidden;
 	}
-	
+
 	.title-div{
 	padding: 24% 17%;
 		}
