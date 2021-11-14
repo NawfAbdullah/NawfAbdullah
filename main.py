@@ -26,7 +26,7 @@ ckeditor = CKEditor(app)
 Bootstrap(app)
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+app.config['SECRET_KEY'] = "rgrgesrgsertgseescxgry3233t54rtgfdyrdxrea"
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL",'sqlite:///portfolio.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
