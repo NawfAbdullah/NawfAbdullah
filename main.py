@@ -27,7 +27,7 @@ Bootstrap(app)
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['SECRET_KEY'] = "rgrgesrgsertgseescxgry3233t54rtgfdyrdxrea"
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL",'sqlite:///portfolio.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://tlbybeyxojzdpe:f46e9936ab8a3203b04bb94547eebbbb4ebb7944eab34f6b8f24ae1e4446f713@ec2-52-204-72-14.compute-1.amazonaws.com:5432/dbv9sch2cbbbjq"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
