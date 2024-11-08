@@ -1,16 +1,16 @@
-# Hi there, I'm Nawf! 👋
+# Hi there, I'm Nawf Abdullah! 👋
 
 I'm a 20-year-old developer passionate about crafting innovative solutions and exploring the vast world of technology. My toolbox includes Python, JavaScript, React.js, Express.js, Flutter, and more. I find joy in turning ideas into code and thrive on continuous learning.
 
 ## 🔧 Technologies & Tools
 - **Languages:** Python, JavaScript
 - **Frontend:** React.js, HTML, CSS
-- **Backend:** Express.js
-- **Data Science:** Pandas, Numpy (Just starting out)
+- **Backend:** Express.js, Flask
+- **Data Science:** Pandas, Numpy, Keras, OpenCV, Tensorflow
 - **Mobile App:** Flutter
 
 ## 🌐 Projects
-- [Portfolio]((https://nawf-abdullah.up.railway.app/)): BReact Website to showcase my projects
+- [Portfolio]((https://nawfabdullah.netlify.app/)): React Website to showcase my projects
 - [CISC Official Project]([link-to-project-2](https://cisc.up.railway.app/)): Official Website for crescent innovation and startup Club
 
 
